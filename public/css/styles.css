@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*Header*/
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.texto {
+    font-weight: 400;
+    text-align: center;
+}
+
+.navbar-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-principal a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.container {
+    text-align: center;
+}
+
+.search-bar {
+
+    position: relative;
+    
+}
+
+input {
+    width: 500px;
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+}
+
+button {
+   background-color: crimson;
+   padding: 10px;
+   border: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   margin: auto;
+   border-radius: 0 5px 5px 0;
+   cursor: pointer;
+}
+
+.banner img {
+    width: 100%;
+}
+/*Main*/
+main {
+    margin: auto;
+    width: 90%;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.productos {    
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.elementos-articulos {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.titulos {
+    font-size: 24px;
+    color: #666;
+    margin: 1rem 0 1rem 0;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 18px;
+    padding-left: 1.5rem;
+    color: #39b54a;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    display: none;
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-precio {
+    width: 30%;
+}
+
+.flex-descuentos {
+    width: 70%;
+
+}
+
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4.3rem;
+    right: 2rem;
+}
+
+.fa-truck {
+    font-size: 20px;
+    color: green;
+    border-radius: 1px solid green;
+}
+/*Footer*/
+footer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-credit-card {
+    font-size: 40px;
+    color: blue;
+}
+
+.fa-gift {
+    font-size: 40px;
+    color: blue;
+}
+
+.fa-shield-halved {
+    font-size: 40px;
+    color: blue;
+}
+
+/*Media queries*/
+
+/*--HEADER--*/
+@media (min-width: 768px) {
+    .header-abajo {
+        flex-wrap: nowrap;
+    }
+    
+    .logo {
+        width: 35%;
+    }
+
+    .container {
+        width: 30%;
+    }
+
+    .texto {
+        width: 35%;
+    }
+
+
+    .navbar-principal {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    .navbar-principal ul {
+        display: flex;
+    }
+
+    .navbar-principal li {
+        margin: 0 6px;
+    }
+}
+
+
+/*--MAIN--*/
+@media (min-width: 768px) {
+
+    .productos {
+        width: 48%;
+        transition: all 500ms;
+    }
+
+    .productos:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        scale: 1.02;
+    }
+
+}
+
+@media (min-width: 1200px) { 
+    .productos {
+        width: 22%;
+    }
+
+    main section article i{
+        margin-left: 15%;
+    }
+}

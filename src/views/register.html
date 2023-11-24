@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="./css/register.css">
+    </head>
+    <body>
+            <form action="/register" method="POST">
+                <div>
+                    <label for="name">Nombre y Apellido</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="nickname">Nombre de usuario</label>
+                    <input type="text" name="nickname" id="nickname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="birthdate">Fecha de nacimiento</label>
+                    <input type="date" min="2000-01-01" max="2022-04-06" name="birthdate" id="birthdate">
+                </div>
+                <div>
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" name="domicilio" id="domicilio">
+                </div>
+                <div>
+                    <p>Perfil de usuario</p>
+                    <label>
+                        <input type="radio" name="comprador" value="comprador">
+                        "Comprador"
+                    </label>
+                    <label>
+                        <input type="radio" name="vendedor" value="vendedor">
+                        "Vendedor"
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="background" value="electrodomesticos">
+                        "Electrodomesticos"
+                    </label>
+                    <label>
+                        <input type="checkbox" name="background" value="moda">
+                        "Moda"
+                    </label>
+                    <label>
+                        <input type="checkbox" name="background" value="Hogar">
+                        "Hogar"
+                    </label>
+                    <label>
+                        <input type="checkbox" name="background" value="jugueteria">
+                        "Jugueteria"
+                    </label>
+                    <label>
+                        <input type="checkbox" name="background" value="vida-sana">
+                        "Vida Sana"
+                    </label>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <input text="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="confirmar">Confirmar contraseña</label>
+                    <input text="password" name="password" id="password">
+                </div>
+                <button type="submit" value="enviar">
+                <a href="./views/home.html">Enviar</a>
+                </button>
+                <button type="reset" value="borrar">Borrar</button>
+            </form>
+        </header>
+    </body>
+</html>

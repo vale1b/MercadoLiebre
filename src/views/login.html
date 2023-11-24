@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ingreso</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <form action="/login" method="POST">
+        <label for="usuario">Nombre de usuari@:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <button type="submit">Iniciar Sesion</button>
+    </form>
+    <script>
+        function validateForm() {
+            var usuario = document.getElementById('usuario').value;
+            var contrasena = document.getElementById('contrasena').value;
+
+            // Validación de ejemplo: Usuario debe tener al menos 3 caracteres
+            if (usuario.length < 3) {
+                document.getElementById('errorMessage').innerHTML = 'El nombre de usuari@ debe tener al menos 3 caracteres.';
+                return false; // Evita que el formulario se envíe
+            }
+
+            // Otras validaciones aquí...
+
+            // Limpiar el mensaje de error si no hay errores
+            document.getElementById('errorMessage').innerHTML = '';
+
+            return true; // Permite que el formulario se envíe
+        }
+    </script>
+
+</body>
