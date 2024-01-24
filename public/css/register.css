@@ -13,7 +13,7 @@ form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px #EAC926;
+    box-shadow: 0 0 10px rgb(0, 153, 255);
 }
 
 label {
@@ -25,7 +25,7 @@ input, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #EAC926;
+    border: 1px solid rgb(0, 153, 255);
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -44,5 +44,5 @@ button[type="reset"] {
 }
 
 ::placeholder {
-    color: #EAC926;
+    color: rgb(0, 153, 255);
 }
