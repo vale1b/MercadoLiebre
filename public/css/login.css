@@ -2,10 +2,10 @@
     width: 100%;
     max-width: 50rem;
     margin: 20rem auto;
-    background-color: #fff;
+    background-color: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #EAC926;
     text-align: center;
 }
 
@@ -14,14 +14,14 @@
 }
 
 .input-group input {
-    width: 100%;
+    width: 75%;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    border: 0.1rem solid #ccc;
+    border: 0.1rem solid #EAC926;
     border-radius: 0.4rem;
 }
 .form-login button {
-    background-color: black;
+    background-color:#EAC926;
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -31,4 +31,12 @@
 }
 .form-login button:hover {
     background-color: crimson;
+}
+
+::placeholder {
+    color: #EAC926;
+}
+
+label {
+    color: #EAC926;
 }
