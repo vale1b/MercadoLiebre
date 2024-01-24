@@ -76,6 +76,7 @@ button {
 .banner img {
     width: 100%;
 }
+
 /*Main*/
 main {
     margin: auto;
@@ -162,9 +163,10 @@ main section article i{
     color: green;
     border-radius: 1px solid green;
 }
+
 /*Footer*/
 footer {
-    background-color: yellow;
+    background-color: #EAC926;
     color: black;
     text-align: center;
     padding: 1em 0;
@@ -192,27 +194,10 @@ footer i {
     color: blue;
 }
 
+
 /*Media queries*/
-
-/*--HEADER--*/
-@media (min-width: 768px) {
-    .header-abajo {
-        flex-wrap: nowrap;
-    }
-    
-    .logo {
-        width: 35%;
-    }
-
-    .container {
-        width: 30%;
-    }
-
-    .texto {
-        width: 35%;
-    }
-
-
+/*Header*/
+@media (min-width: 1440px) {
     .navbar-principal {
         display: flex; 
         justify-content: space-between;
@@ -227,8 +212,37 @@ footer i {
     }
 }
 
+@media (min-width: 1024px) {
+    .navbar-principal {
+        display: flex; 
+        justify-content: space-between;
+    }
 
-/*--MAIN--*/
+    .navbar-principal ul {
+        display: flex;
+    }
+
+    .navbar-principal li {
+        margin: 0 6px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-principal {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    .navbar-principal ul {
+        display: flex;
+    }
+
+    .navbar-principal li {
+        margin: 0 4px;
+    }
+}
+
+/*Main*/
 @media (min-width: 768px) {
 
     .productos {
