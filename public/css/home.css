@@ -55,7 +55,7 @@ body {
 input {
     width: 500px;
     padding: 10px;
-    padding-right: 35px;
+    padding-right: 10px;
     border-radius: 5px 0 0 5px;
     border: 0;
     outline: none;
