@@ -9,3 +9,5 @@ Durante el proceso de desarrollo, aprendi muchas lecciones valiosas, especialmen
 En resumen, Mercado Liebre no solo es mi primer proyecto, sino que tambien un testimonio de mi capacidad para abordar desafios y crear soluciones innovadoras. 🚀🌟
 
 ¡Gracias por su atencion! 👏😊
+
+Este es el link para que puedar entrear a la pagina: https://valentinbarberis-mercadoliebre.onrender.com
