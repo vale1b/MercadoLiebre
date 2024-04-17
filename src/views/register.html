@@ -7,57 +7,59 @@
         <link rel="stylesheet" href="css/register.css">
     </head>
     <body>
-            <form action="/register" method="POST">
-                <div>
+            <form  class="form-register"action="/register" method="POST">
+                <h1 class="title-register">Registrarme</h1>
+                <div class="container-input">
                     <label for="name">Nombre y Apellido</label>
                     <input type="text" name="name" id="name" placeholder="Ingrese su nombre y apellido...">
                 </div>
-                <div>
+                <div class="container-input">
                     <label for="nickname">Nombre de usuario</label>
                     <input type="text" name="nickname" id="nickname" placeholder="Ingrese un nickname...">
                 </div>
-                <div>
+                <div class="container-input">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Ingrese un email...">
                 </div>
-                <div>
+                <div class="container-input">
                     <label for="birthdate">Fecha de nacimiento</label>
                     <input type="date" min="2000-01-01" max="2022-04-06" name="birthdate" id="birthdate">
                 </div>
-                <div>
+                <div class="container-input">
                     <label for="domicilio">Domicilio</label>
                     <input type="text" name="domicilio" id="domicilio" placeholder="Ingrese su domicilio...">
                 </div>
                 <p>
                     <h3>Perfil de usuario</h3>
-                    <label for="comprador">Comprador</label>
-                    <input type="radio" name="perfil-usuario" value="Comprador" id="comprador">
-                    <label for="vendedor">Vendedor</label>
-                    <input type="radio" name="perfil-usuario" value="Vendedor" id="vendedor">
+                    <select name ="select-perfil"class="select-perfil">
+                        <option value="" disabled selected>Selecciona un perfil</option>
+                        <option value="comprador">Comprador</option>
+                        <option value="vendedor">Vendedor</option>
+                    </select>
                 </p>
                 <p>
                     <h3>Intereses</h3>
                     <input type="checkbox" name="electro" id="electro">
-                    <label for="electro">Electro</label><br>
+                    <label for="electro">Electro</label>
                     <input type="checkbox" name="moda" id="moda">
-                    <label for="moda">Moda</label><br>
+                    <label for="moda">Moda</label>
                     <input type="checkbox" name="hogar" id="hogar">
-                    <label for="hogar">Hogar</label><br>
+                    <label for="hogar">Hogar</label>
                     <input type="checkbox" name="jugueteria" id="jugueteria">
-                    <label for="jugueteria">Juguetería</label><br>
+                    <label for="jugueteria">Juguetería</label>
                     <input type="checkbox" name="vida-sana" id="vida-sana">
-                    <label for="vida-sana">Vida sana</label><br>
+                    <label for="vida-sana">Vida sana</label>
                 </p>
-                <div>
+                <div class="container-input">
                     <label for="contraseña">Contraseña</label>
                     <input text="password" name="password" id="password" placeholder="Ingrese su contraseña...">
                 </div>
-                <div>
+                <div class="container-input">
                     <label for="confirmar">Confirmar contraseña</label>
                     <input text="password" name="password" id="password" placeholder="Confirme su contraseña...">
                 </div>
                 <button type="submit" value="enviar">
-                <a href="views/home.html">Enviar</a>
+                <a href="./home.html">Enviar</a>
                 </button>
                 <button type="reset" value="borrar">Borrar</button>
             </form>
